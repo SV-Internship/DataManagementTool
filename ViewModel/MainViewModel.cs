@@ -12,17 +12,17 @@ namespace SV_final.ViewModel
     {
         public OpenViewModel OpenVM { get; set; }
 
-        private ObservableCollection<ObjectDetect> _listData;
+        //private ObservableCollection<ObjectDetect> _listData;
 
-        public ObservableCollection<ObjectDetect> ListData
-        {
-            get { return _listData; }
-            set
-            {
-                ListData = value;
-                OnPropertyChanged("ListData");
-            }
-        }
+        //public ObservableCollection<ObjectDetect> ListData
+        //{
+        //    get { return _listData; }
+        //    set
+        //    {
+        //        ListData = value;
+        //        OnPropertyChanged("ListData");
+        //    }
+        //}
 
         private object _openContent;
 
@@ -36,11 +36,16 @@ namespace SV_final.ViewModel
             }
         }
 
+        public ConvertViewModel ConvertVM { get; set; }
+
+
+
         public MainViewModel()
         {
             OpenVM = new OpenViewModel(this);
             this.OpenContent = new OpenViewModel(this);
-            ListData = new ObservableCollection<ObjectDetect>();
+            ConvertVM = new ConvertViewModel();
+            //ListData = new ObservableCollection<ObjectDetect>();
         }
     }
 }

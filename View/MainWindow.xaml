@@ -4,7 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SV_final.ViewModel"
+
         xmlns:i ="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:local1="clr-namespace:SV_final.View"
         mc:Ignorable="d"
         Title="Data Management Tool" Height="800" Width="900">
     <Window.DataContext>
@@ -17,7 +19,7 @@
                     <TabItem Header="DataControl">
                         <TabControl>
                             <TabItem Header="Convert">
-
+                                <local1:ConvertView DataContext="{Binding ConvertVM}"/>
                             </TabItem>
                             <TabItem Header="Merge/Split">
 

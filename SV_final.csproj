@@ -61,8 +61,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Model\ImageList.cs" />
-    <Compile Include="Model\ObjectList.cs" />
+    <Compile Include="Model\File.cs" />
+    <Compile Include="Model\Files.cs" />
+    <Compile Include="Model\Object.cs" />
+    <Compile Include="Model\ObjectDetect.cs" />
+    <Compile Include="Model\Objects.cs" />
     <Compile Include="View\RightSideView.xaml.cs">
       <DependentUpon>RightSideView.xaml</DependentUpon>
     </Compile>

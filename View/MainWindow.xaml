@@ -6,7 +6,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SV_final"
         mc:Ignorable="d"
-        Title="Data Management Tool" Height="800" Width="900">
+        Title="Data Management Tool" Height="800" Width="900"
+        Loaded="Window_Loaded">
     <StackPanel Orientation="Vertical">
         <DockPanel>
             <Border Width="450" DockPanel.Dock="Left">
@@ -31,25 +32,26 @@
                 <!-- Right side View Binding-->
             </Border>
         </DockPanel>
-        <ListView Height="400" Width="Auto">
+        <TextBlock x:Name="FileCount" Text="Default"/>
+        <ListView x:Name="Data" Height="400" Width="Auto">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="ShapeType" Width="70"/>
-                    <GridViewColumn Header="Type" Width="35"/>
-                    <GridViewColumn Header="Height" Width="50"/>
-                    <GridViewColumn Header="Width" Width="45"/>
-                    <GridViewColumn Header="ShowRoof" Width="65"/>
-                    <GridViewColumn Header="ExtendedPoint" Width="90"/>
-                    <GridViewColumn Header="Side" Width="35"/>
-                    <GridViewColumn Header="Direction" Width="55"/>
-                    <GridViewColumn Header="Bottom" Width="50"/>
-                    <GridViewColumn Header="Right" Width="45"/>
-                    <GridViewColumn Header="Top" Width="30"/>
-                    <GridViewColumn Header="Left" Width="35"/>
-                    <GridViewColumn Header="LeftCorX" Width="60"/>
-                    <GridViewColumn Header="LeftCorY" Width="60"/>
-                    <GridViewColumn Header="RightCorX" Width="75"/>
-                    <GridViewColumn Header="RightCorY" Width="75"/>
+                    <GridViewColumn Header="ShapeType" Width="70" DisplayMemberBinding="{Binding Path=ShapeType}"/>
+                    <GridViewColumn Header="Type" Width="35" DisplayMemberBinding="{Binding Path=Type}"/>
+                    <GridViewColumn Header="Height" Width="50" DisplayMemberBinding="{Binding Path=Height}"/>
+                    <GridViewColumn Header="Width" Width="45" DisplayMemberBinding="{Binding Path=Width}"/>
+                    <GridViewColumn Header="ShowRoof" Width="65" DisplayMemberBinding="{Binding Path=ShowRoof}"/>
+                    <GridViewColumn Header="ExtendedPoint" Width="90" DisplayMemberBinding="{Binding Path=ExtendedPoint}"/>
+                    <GridViewColumn Header="Side" Width="35" DisplayMemberBinding="{Binding Path=Side}"/>
+                    <GridViewColumn Header="Direction" Width="55" DisplayMemberBinding="{Binding Path=Direction}"/>
+                    <GridViewColumn Header="Bottom" Width="50" DisplayMemberBinding="{Binding Path=Bottom}"/>
+                    <GridViewColumn Header="Right" Width="45" DisplayMemberBinding="{Binding Path=Right}"/>
+                    <GridViewColumn Header="Top" Width="30" DisplayMemberBinding="{Binding Path=Top}"/>
+                    <GridViewColumn Header="Left" Width="35" DisplayMemberBinding="{Binding Path=Left}"/>
+                    <GridViewColumn Header="LeftCorX" Width="60" DisplayMemberBinding="{Binding Path=LeftCorX}"/>
+                    <GridViewColumn Header="LeftCorY" Width="60" DisplayMemberBinding="{Binding Path=LeftCorY}"/>
+                    <GridViewColumn Header="RightCorX" Width="75" DisplayMemberBinding="{Binding Path=RightCorX}"/>
+                    <GridViewColumn Header="RightCorY" Width="75" DisplayMemberBinding="{Binding Path=RightCorY}"/>
                 </GridView>
             </ListView.View>
         </ListView>

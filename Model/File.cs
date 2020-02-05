@@ -7,14 +7,14 @@ using System.Xml.Serialization;
 
 namespace SV_final.Model
 {
-    public class File
+    public class _File
     {
         [XmlAttribute("FileName")]
         public string FileName { get; set; }
         [XmlElement("Objects")]
         public Objects Objects { get; set; }
 
-        public File() { }
+        public _File() { }
 
     }
 }

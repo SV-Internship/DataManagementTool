@@ -28,8 +28,9 @@ namespace SV_final.View
         {
             InitializeComponent();
         }
-        ObservableCollection<ObjectDetect> listData;
+        //ObservableCollection<ObjectDetect> listData;
 
+        /*
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             listData = new ObservableCollection<ObjectDetect>();
@@ -72,5 +73,6 @@ namespace SV_final.View
             FileCount.Text = (listData[0].Files.FileCount).ToString();
 
         }
+        */
     }
 }

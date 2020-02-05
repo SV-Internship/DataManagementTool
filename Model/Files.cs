@@ -12,7 +12,7 @@ namespace SV_final.Model
         [XmlAttribute("FileCount")]
         public int FileCount { get; set; }
         [XmlElement("File")]
-        public List<File> File {get; set;}
+        public List<_File> File { get; set; }
 
         public Files() { }
 

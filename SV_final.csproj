@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2C62BFDE-8F03-4D8F-89E2-55D6232BB770}</ProjectGuid>
+    <ProjectGuid>{638E0D72-286B-4861-836A-789328850075}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>SV_final</RootNamespace>
     <AssemblyName>SV_final</AssemblyName>
@@ -61,18 +61,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Model\File.cs" />
-    <Compile Include="Model\Files.cs" />
-    <Compile Include="Model\Object.cs" />
-    <Compile Include="Model\ObjectDetect.cs" />
-    <Compile Include="Model\Objects.cs" />
-    <Compile Include="View\RightSideView.xaml.cs">
-      <DependentUpon>RightSideView.xaml</DependentUpon>
+    <Compile Include="View\OpenView.xaml.cs">
+      <DependentUpon>OpenView.xaml</DependentUpon>
     </Compile>
-    <Page Include="View\LeftSideView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -81,19 +72,25 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="View\LeftSideView.xaml.cs">
-      <DependentUpon>LeftSideView.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\OpenViewModel.cs" />
+    <Compile Include="ViewModel\RelayCommand.cs" />
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\RightSideView.xaml">
+    <Page Include="View\OpenView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\File.cs" />
+    <Compile Include="Model\Files.cs" />
+    <Compile Include="Model\Object.cs" />
+    <Compile Include="Model\ObjectDetect.cs" />
+    <Compile Include="Model\Objects.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -120,8 +117,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

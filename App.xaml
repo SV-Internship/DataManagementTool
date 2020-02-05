@@ -1,9 +1,12 @@
 ﻿<Application x:Class="SV_final.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:SV_final"
+             xmlns:localview="clr-namespace:SV_final.View"
+             xmlns:localviewmodel="clr-namespace:SV_final.ViewModel"
              StartupUri="View/MainWindow.xaml">
     <Application.Resources>
-         
+        <DataTemplate DataType="{x:Type localviewmodel:OpenViewModel}">
+            <localview:OpenView/>
+        </DataTemplate>
     </Application.Resources>
 </Application>

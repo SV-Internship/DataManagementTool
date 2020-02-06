@@ -27,13 +27,22 @@ namespace SV_final.ViewModel
             ObjectDetect overview = (ObjectDetect)deserializer.Deserialize(reader);
             reader.Close();
 
-            //FileCount.Text = (listData[0].Files.FileCount).ToString();
+            Console.WriteLine(overview.Files.File[98].Objects.Count);
 
             using (StreamWriter outputFile = new StreamWriter(@"..\..\New_TEXT_File.txt"))
             {
                 foreach (_File file in overview.Files.File)
                 {
                     outputFile.WriteLine(file.FileName);
+                    if(file.Objects == null)
+                    {
+                        continue;
+                    }
+                    outputFile.WriteLine(file.Objects.Count);
+                    foreach (_Object obj in file.Objects.Object)
+                    {
+                        outputFile.WriteLine(obj.Type + " "+ obj.Position.Left + " " + obj.Position.Top + " " + obj.Position.Right + " " + obj.Position.Bottom + " " + obj.Label.Text);
+                    }
                 }
             }
         }

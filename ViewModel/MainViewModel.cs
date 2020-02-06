@@ -11,6 +11,9 @@ namespace SV_final.ViewModel
     class MainViewModel : BaseViewModel
     {
         public OpenViewModel OpenVM { get; set; }
+        public LogViewModel LogVM { get; set; }
+
+
 
         //private ObservableCollection<ObjectDetect> _listData;
 
@@ -42,9 +45,11 @@ namespace SV_final.ViewModel
 
         public MainViewModel()
         {
-            OpenVM = new OpenViewModel(this);
-            this.OpenContent = new OpenViewModel(this);
-            ConvertVM = new ConvertViewModel();
+            LogVM = new LogViewModel();
+            OpenVM = new OpenViewModel(this, LogVM);
+            this.OpenContent = new OpenViewModel(this, LogVM);
+            ConvertVM = new ConvertViewModel(LogVM);
+            
             //ListData = new ObservableCollection<ObjectDetect>();
         }
     }

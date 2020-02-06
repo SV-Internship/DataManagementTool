@@ -8,10 +8,12 @@
         xmlns:i ="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:local1="clr-namespace:SV_final.View"
         mc:Ignorable="d"
-        Title="Data Management Tool" Height="800" Width="900">
-    <Window.DataContext>
+        Title="Data Management Tool" Height="800" Width="900"
+        DataContext="{Binding Source={StaticResource MainVM}}">
+    <!--<Window.DataContext>
         <local:MainViewModel/>
-    </Window.DataContext>
+    </Window.DataContext>-->
+
     <DockPanel LastChildFill="True">
         <Border Height="800" Width="550" DockPanel.Dock="Left">
             <StackPanel Orientation="Vertical">
@@ -34,9 +36,7 @@
                     </TabItem>
                 </TabControl>
                 <GroupBox Header="Work Log" Height="230" Margin="5,5,5,5">
-                    <ListBox Margin="5,5,5,5" ScrollViewer.VerticalScrollBarVisibility="Visible">
-
-                    </ListBox>
+                    <local1:LogView DataContext="{Binding LogVM}"/>
                 </GroupBox>
             </StackPanel>
         </Border>

@@ -14,6 +14,7 @@ namespace SV_final.ViewModel
     class OpenViewModel : BaseViewModel
     {
         private MainViewModel _mainViewmodel;
+        private LogViewModel logViewModel;
 
         private ObservableCollection<string> _fileList;
         public ObservableCollection<string> FileList
@@ -67,11 +68,14 @@ namespace SV_final.ViewModel
 
         public RelayCommand OpenCommand { get; private set; }
 
-        public OpenViewModel(MainViewModel mainviewmodel)
+
+        public OpenViewModel(MainViewModel mainviewmodel, LogViewModel logViewModel)
         {
             this._mainViewmodel = mainviewmodel;
+            this.logViewModel = logViewModel;
             FileList = new ObservableCollection<string>();
             OpenCommand = new RelayCommand(Open);
+
         }
 
         private void Open()
@@ -93,7 +97,16 @@ namespace SV_final.ViewModel
 
                 string Path = System.IO.Path.GetFullPath(dialog.FileName);
                 Path = Path.Replace("default", "").Trim();
-
+                try
+                {
+                    FileStream fs = File.Open(Path, FileMode.Open);
+                    logViewModel.AddLog(GetType(), Path);
+                }
+                catch
+                {
+                    logViewModel.FailLog(GetType(), Path);
+                    return;
+                }
                 string[] parser = Path.Split('.');
                 Console.WriteLine(Path);
 
@@ -128,6 +141,7 @@ namespace SV_final.ViewModel
                         FileList.Add(x);
                 }
 
+                
             }
 
             catch (Exception ex)

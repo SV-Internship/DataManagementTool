@@ -8,5 +8,7 @@
         <DataTemplate DataType="{x:Type localviewmodel:OpenViewModel}">
             <localview:OpenView/>
         </DataTemplate>
+        <localviewmodel:MainViewModel x:Key="MainVM"/>
+
     </Application.Resources>
 </Application>

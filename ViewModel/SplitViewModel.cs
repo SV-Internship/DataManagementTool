@@ -28,6 +28,7 @@ namespace SV_final.ViewModel
                 OnPropertyChanged("Name");
             }
         }
+        private int intNum { get; set; }
         private string _number;
         public string Number
         {
@@ -96,7 +97,6 @@ namespace SV_final.ViewModel
             WorkerList = new ObservableCollection<string>();
             NameVisibility = "Hidden";
             NumVisibility = "Hidden";
-            Number = "start";
         }
 
         private void Del()
@@ -113,7 +113,18 @@ namespace SV_final.ViewModel
 
         private void Check()
         {
-            NumInfo = Number + "개 파일로 분할합니다.";
+            int i;
+            if (!Int32.TryParse(Number, out i))
+            {
+                intNum = -1;
+                NumInfo = "잘못된 입력입니다";
+            }
+            else
+            {
+                intNum = i;
+                Console.WriteLine(intNum);
+                NumInfo = Number + "개 파일로 분할합니다.";
+            }
         }
 
         public void OptionRB(object sender, RoutedEventArgs e)

@@ -19,7 +19,7 @@
             <ListView Grid.Row="1" Grid.Column="0" ItemsSource="{Binding WorkerList}" SelectedItem="{Binding SelectedItem}" SelectionChanged="ListView_SelectionChanged">
                 <ListView.View>
                     <GridView AllowsColumnReorder="true">
-                        <GridViewColumn Header="Name"/>
+                        <GridViewColumn Header="Name" Width="80"/>
                     </GridView>
                 </ListView.View>
             </ListView>

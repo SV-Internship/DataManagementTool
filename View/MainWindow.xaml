@@ -24,7 +24,7 @@
                                 <local1:ConvertView DataContext="{Binding ConvertVM}"/>
                             </TabItem>
                             <TabItem Header="Merge/Split">
-
+                                <local1:SplitView DataContext="{Binding SplitVM}"/>
                             </TabItem>
                             <TabItem Header="ImgChange">
 

@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="SV_final.View.SplitView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SV_final.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Left">
+            <GroupBox Header="Worker List" Padding="5">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,0.333">
+                    <TextBlock Text="Name" Margin="5,0"/>
+                    <TextBox Width="80" Text="{Binding Name}"/>
+                    <Button Width="40" Content="Add" Margin="5,0" Command="{Binding AddCommand}"/>
+                    <Button Width="40" Content="Del" Margin="5,0" Command="{Binding DelCommand}"/>
+                </StackPanel>
+            </GroupBox>
+            <ListView Grid.Row="1" Grid.Column="0" ItemsSource="{Binding WorkerList}" SelectedItem="{Binding SelectedItem}" SelectionChanged="ListView_SelectionChanged">
+                <ListView.View>
+                    <GridView AllowsColumnReorder="true">
+                        <GridViewColumn Header="Name"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
+
+        <GroupBox Header="Split" DockPanel.Dock="Right" Padding="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="5*" />
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Grid.Row="0" Text="Origin : " Margin="5"/>
+                <TextBox x:Name="tbModel" Grid.Column="1" Grid.Row="0" Margin="5"/>
+                <Button Grid.Column="2" Grid.Row="0" Content="..." Margin="5" Command="{Binding OpenPathCommand}"/>
+
+                <TextBlock Grid.Column="0" Grid.Row="1" Text="New : " Margin="5"/>
+                <TextBox  Grid.Column="1" Grid.Row="1" Margin="5"/>
+                <Button Grid.Column="2" Grid.Row="1" Content="..." Margin="5" Command="{Binding OpenPathCommand}"/>
+
+                <!--<TextBlock Text="Name" Margin="5,0"/>
+                <TextBox Width="80" Text="{Binding Name}"/>
+                <Button Width="40" Content="Add" Margin="5,0" Command="{Binding AddCommand}"/>
+                <Button Width="40" Content="Del" Margin="5,0" Command="{Binding DelCommand}"/>-->
+            </Grid>
+        </GroupBox>
+
+    </DockPanel>
+</UserControl>

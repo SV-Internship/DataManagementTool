@@ -12,6 +12,7 @@ namespace SV_final.ViewModel
     {
         public OpenViewModel OpenVM { get; set; }
         public LogViewModel LogVM { get; set; }
+        public SplitViewModel SplitVM { get; set; }
 
 
 
@@ -49,6 +50,7 @@ namespace SV_final.ViewModel
             OpenVM = new OpenViewModel(this, LogVM);
             this.OpenContent = new OpenViewModel(this, LogVM);
             ConvertVM = new ConvertViewModel(LogVM);
+            SplitVM = new SplitViewModel(LogVM);
             
             //ListData = new ObservableCollection<ObjectDetect>();
         }

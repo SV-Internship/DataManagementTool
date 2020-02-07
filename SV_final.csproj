@@ -66,6 +66,7 @@
     </ApplicationDefinition>
     <Compile Include="ViewModel\ConvertViewModel.cs" />
     <Compile Include="ViewModel\LogViewModel.cs" />
+    <Compile Include="ViewModel\SplitViewModel.cs" />
     <Compile Include="View\ConvertView.cs">
       <DependentUpon>ConvertView.xaml</DependentUpon>
     </Compile>
@@ -74,6 +75,9 @@
     </Compile>
     <Compile Include="View\OpenView.xaml.cs">
       <DependentUpon>OpenView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SplitView.xaml.cs">
+      <DependentUpon>SplitView.xaml</DependentUpon>
     </Compile>
     <Page Include="View\ConvertView.xaml">
       <SubType>Designer</SubType>
@@ -100,6 +104,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="View\OpenView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SplitView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

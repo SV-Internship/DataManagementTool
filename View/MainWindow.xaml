@@ -23,7 +23,7 @@
                             <TabItem Header="Convert">
                                 <local1:ConvertView DataContext="{Binding ConvertVM}"/>
                             </TabItem>
-                            <TabItem Header="Merge/Split">
+                            <TabItem Header="Merge/Split" HorizontalAlignment="Left" Margin="-1.667,-2,-2.333,0" Width="80">
                                 <local1:SplitView DataContext="{Binding SplitVM}"/>
                             </TabItem>
                             <TabItem Header="ImgChange">

@@ -4,26 +4,66 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SV_final.View"
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" 
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+
     <DockPanel>
-        <StackPanel DockPanel.Dock="Left">
-            <GroupBox Header="Worker List" Padding="5">
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,0.333">
-                    <TextBlock Text="Name" Margin="5,0"/>
-                    <TextBox Width="80" Text="{Binding Name}"/>
-                    <Button Width="40" Content="Add" Margin="5,0" Command="{Binding AddCommand}"/>
-                    <Button Width="40" Content="Del" Margin="5,0" Command="{Binding DelCommand}"/>
+        <Grid DockPanel.Dock="Left">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0">
+                <GroupBox Header="Option" Padding="5">
+                    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="3" Margin="5">
+                        <RadioButton Margin="0,0,10,0" Content="Number" Name="rbNum">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="Checked">
+                                    <ei:CallMethodAction TargetObject="{Binding}" MethodName="OptionRB" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </RadioButton>
+                        <RadioButton Margin="0,0,10,0" Content="Name" Name="rbName">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="Checked">
+                                    <ei:CallMethodAction TargetObject="{Binding}" MethodName="OptionRB" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </RadioButton>
+                    </StackPanel>
+                </GroupBox>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Visibility="{Binding NameVisibility}">
+                <GroupBox Header="Worker List" Padding="5">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,0.333">
+                        <TextBlock Text="Name" Margin="5,0"/>
+                        <TextBox Width="80" Text="{Binding Name}"/>
+                        <Button Width="40" Content="Add" Margin="5,0" Command="{Binding AddCommand}"/>
+                        <Button Width="40" Content="Del" Margin="5,0" Command="{Binding DelCommand}"/>
+                    </StackPanel>
+                </GroupBox>
+                <ListView ItemsSource="{Binding WorkerList}" SelectedItem="{Binding SelectedItem}" SelectionChanged="ListView_SelectionChanged">
+                    <ListView.View>
+                        <GridView AllowsColumnReorder="true">
+                            <GridViewColumn Header="Name" Width="80"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Visibility="{Binding NumVisibility}">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Number" Margin="5,0"/>
+                    <TextBox Width="80" Text="{Binding Number}"/>
+                    <Button Width="Auto" Content="Check" Margin="5,0" Command="{Binding CheckCommand}"/>
                 </StackPanel>
-            </GroupBox>
-            <ListView Grid.Row="1" Grid.Column="0" ItemsSource="{Binding WorkerList}" SelectedItem="{Binding SelectedItem}" SelectionChanged="ListView_SelectionChanged">
-                <ListView.View>
-                    <GridView AllowsColumnReorder="true">
-                        <GridViewColumn Header="Name" Width="80"/>
-                    </GridView>
-                </ListView.View>
-            </ListView>
-        </StackPanel>
+                <TextBlock Text="{Binding NumInfo}"/>
+
+            </StackPanel>
+             
+        </Grid>
+        
 
         <GroupBox Header="Split" DockPanel.Dock="Right" Padding="5">
             <Grid>

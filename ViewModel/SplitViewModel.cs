@@ -103,6 +103,7 @@ namespace SV_final.ViewModel
             WorkerList = new ObservableCollection<string>();
             NameVisibility = "Hidden";
             NumVisibility = "Hidden";
+            intNum = -1;
         }
 
         private void Del()

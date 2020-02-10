@@ -6,7 +6,11 @@
              xmlns:local="clr-namespace:SV_final.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <TextBlock Text="hi"/>
-    </Grid>
+    <StackPanel>
+        <GroupBox Header="Files for Merge">
+            <ListBox Margin="5" Width="350" Height="200"
+                 ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+        </GroupBox>
+        <Button Width="40" Height="20" Content="DO" Margin="5,0" Command="{Binding DoCommand}"/>
+    </StackPanel>
 </UserControl>

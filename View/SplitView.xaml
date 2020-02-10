@@ -10,7 +10,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
 
     <DockPanel>
-        <Border DockPanel.Dock="Left" BorderBrush="DodgerBlue" BorderThickness="1">
+        <Border DockPanel.Dock="Left" BorderBrush="{DynamicResource AccentColorBrush}" BorderThickness="1">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>

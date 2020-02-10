@@ -1,0 +1,1361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ObjectDetect xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Files FileCount="33">
+    <File FileName="tte_svm_rear_20170831_071542530984.mp4_03961.jpg">
+      <Objects Count="4">
+        <Object Type="6" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="330" Height="310" />
+          <Position Left="949" Top="218" Right="1279" Bottom="528" />
+          <Points>
+            <Point y="218" x="949" />
+            <Point y="528" x="1279" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="5" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="100" Height="56" />
+          <Position Left="717" Top="269" Right="817" Bottom="325" />
+          <Points>
+            <Point y="269" x="717" />
+            <Point y="325" x="817" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="31" Height="21" />
+          <Position Left="631" Top="286" Right="662" Bottom="307" />
+          <Points>
+            <Point y="286" x="631" />
+            <Point y="307" x="662" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="35" Height="22" />
+          <Position Left="686" Top="286" Right="721" Bottom="308" />
+          <Points>
+            <Point y="286" x="686" />
+            <Point y="308" x="721" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_071544796250.mp4_04681.jpg">
+      <Objects Count="2">
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="24" Height="49" />
+          <Position Left="532" Top="272" Right="556" Bottom="321" />
+          <Points>
+            <Point y="272" x="532" />
+            <Point y="321" x="556" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="10" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="83" Height="37" />
+          <Position Left="1136" Top="338" Right="1219" Bottom="375" />
+          <Points>
+            <Point y="338" x="1136" />
+            <Point y="375" x="1219" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_071545776248.mp4_03631.jpg">
+      <Objects Count="4">
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="29.169983" Height="60" />
+          <Position Left="981" Top="299.17001" Right="1010.17" Bottom="359.17001" />
+          <Points>
+            <Point y="299.17001" x="981" />
+            <Point y="359.17001" x="1010.17" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="58.340088" Height="92.5" />
+          <Position Left="1111.83" Top="317.5" Right="1170.17" Bottom="410" />
+          <Points>
+            <Point y="317.5" x="1111.83" />
+            <Point y="410" x="1170.17" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="34.170044" Height="63.329987" />
+          <Position Left="1096" Top="320" Right="1130.17" Bottom="383.32999" />
+          <Points>
+            <Point y="320" x="1096" />
+            <Point y="383.32999" x="1130.17" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="32.5" Height="62.5" />
+          <Position Left="936" Top="292.5" Right="968.5" Bottom="355" />
+          <Points>
+            <Point y="292.5" x="936" />
+            <Point y="355" x="968.5" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_071552554807.mp4_07921.jpg">
+      <Objects Count="5">
+        <Object Type="3" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="32" Height="48" />
+          <Position Left="540" Top="278" Right="572" Bottom="326" />
+          <Points>
+            <Point y="278" x="540" />
+            <Point y="326" x="572" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="32" Height="66" />
+          <Position Left="1039" Top="307" Right="1071" Bottom="373" />
+          <Points>
+            <Point y="307" x="1039" />
+            <Point y="373" x="1071" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="28" Height="66" />
+          <Position Left="1079" Top="308" Right="1107" Bottom="374" />
+          <Points>
+            <Point y="308" x="1079" />
+            <Point y="374" x="1107" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="18" Height="78" />
+          <Position Left="1098" Top="300" Right="1116" Bottom="378" />
+          <Points>
+            <Point y="300" x="1098" />
+            <Point y="378" x="1116" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="34" Height="15" />
+          <Position Left="680" Top="288" Right="714" Bottom="303" />
+          <Points>
+            <Point y="288" x="680" />
+            <Point y="303" x="714" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_071600308392.mp4_00631.jpg">
+      <Objects Count="4">
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="353" Height="187" />
+          <Position Left="886" Top="274" Right="1239" Bottom="461" />
+          <Points>
+            <Point y="274" x="886" />
+            <Point y="461" x="1239" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="110" Height="48" />
+          <Position Left="796" Top="293" Right="906" Bottom="341" />
+          <Points>
+            <Point y="293" x="796" />
+            <Point y="341" x="906" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="119" Height="95" />
+          <Position Left="125" Top="309" Right="244" Bottom="404" />
+          <Points>
+            <Point y="309" x="125" />
+            <Point y="404" x="244" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="35" Height="22" />
+          <Position Left="745" Top="291" Right="780" Bottom="313" />
+          <Points>
+            <Point y="291" x="745" />
+            <Point y="313" x="780" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_071641933812.mp4_06331.jpg">
+      <Objects Count="14">
+        <Object Type="11" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="55" Height="64" />
+          <Position Left="1133" Top="338" Right="1188" Bottom="402" />
+          <Points>
+            <Point y="338" x="1133" />
+            <Point y="402" x="1188" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="44" Height="77" />
+          <Position Left="1228" Top="349" Right="1272" Bottom="426" />
+          <Points>
+            <Point y="349" x="1228" />
+            <Point y="426" x="1272" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="32" Height="57" />
+          <Position Left="1219" Top="351" Right="1251" Bottom="408" />
+          <Points>
+            <Point y="351" x="1219" />
+            <Point y="408" x="1251" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="5" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="82.5" Height="39.170013" />
+          <Position Left="812.5" Top="282" Right="895" Bottom="321.17001" />
+          <Points>
+            <Point y="282" x="812.5" />
+            <Point y="321.17001" x="895" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="11.660034" Height="33.329987" />
+          <Position Left="869.16998" Top="292" Right="880.83002" Bottom="325.32999" />
+          <Points>
+            <Point y="292" x="869.16998" />
+            <Point y="325.32999" x="880.83002" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="12.5" Height="26.389984" />
+          <Position Left="1003.28" Top="306.72" Right="1015.78" Bottom="333.10999" />
+          <Points>
+            <Point y="306.72" x="1003.28" />
+            <Point y="333.10999" x="1015.78" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="6.25" Height="20.839996" />
+          <Position Left="990.08002" Top="303.94" Right="996.33002" Bottom="324.78" />
+          <Points>
+            <Point y="303.94" x="990.08002" />
+            <Point y="324.78" x="996.33002" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="8.3299561" Height="20.140015" />
+          <Position Left="751.89001" Top="286.57999" Right="760.21997" Bottom="306.72" />
+          <Points>
+            <Point y="286.57999" x="751.89001" />
+            <Point y="306.72" x="760.21997" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="83.330002" Height="52.779999" />
+          <Position Left="35.639999" Top="370.28" Right="118.97" Bottom="423.06" />
+          <Points>
+            <Point y="370.28" x="35.639999" />
+            <Point y="423.06" x="118.97" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="54.169998" Height="38.890015" />
+          <Position Left="93.970001" Top="350.82999" Right="148.14" Bottom="389.72" />
+          <Points>
+            <Point y="350.82999" x="93.970001" />
+            <Point y="389.72" x="148.14" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="10" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="33.339996" Height="19.450012" />
+          <Position Left="137.72" Top="343.19" Right="171.06" Bottom="362.64001" />
+          <Points>
+            <Point y="343.19" x="137.72" />
+            <Point y="362.64001" x="171.06" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="45.839996" Height="24.299988" />
+          <Position Left="180.08" Top="335.56" Right="225.92" Bottom="359.85999" />
+          <Points>
+            <Point y="335.56" x="180.08" />
+            <Point y="359.85999" x="225.92" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="18.060013" Height="35.420013" />
+          <Position Left="255.08" Top="317.5" Right="273.14001" Bottom="352.92001" />
+          <Points>
+            <Point y="317.5" x="255.08" />
+            <Point y="352.92001" x="273.14001" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="10" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="43.059998" Height="21.529999" />
+          <Position Left="262.72" Top="313.32999" Right="305.78" Bottom="334.85999" />
+          <Points>
+            <Point y="313.32999" x="262.72" />
+            <Point y="334.85999" x="305.78" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_072045618242.mp4_06421.jpg">
+      <Objects Count="2">
+        <Object Type="8" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="388" Height="257" />
+          <Position Left="723" Top="158" Right="1111" Bottom="415" />
+          <Points>
+            <Point y="158" x="723" />
+            <Point y="415" x="1111" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="38" Height="23" />
+          <Position Left="619" Top="288" Right="657" Bottom="311" />
+          <Points>
+            <Point y="288" x="619" />
+            <Point y="311" x="657" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_072049151737.mp4_02641.jpg">
+      <Objects Count="3">
+        <Object Type="13" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="125" Height="69" />
+          <Position Left="973" Top="309" Right="1098" Bottom="378" />
+          <Points>
+            <Point y="309" x="973" />
+            <Point y="378" x="1098" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="44" Height="62" />
+          <Position Left="1091" Top="330" Right="1135" Bottom="392" />
+          <Points>
+            <Point y="330" x="1091" />
+            <Point y="392" x="1135" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="10" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="80" Height="51" />
+          <Position Left="1199" Top="357" Right="1279" Bottom="408" />
+          <Points>
+            <Point y="357" x="1199" />
+            <Point y="408" x="1279" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_072057939933.mp4_08581.jpg">
+      <Objects Count="1">
+        <Object Type="10" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="258" Height="124" />
+          <Position Left="1021" Top="268" Right="1279" Bottom="392" />
+          <Points>
+            <Point y="268" x="1021" />
+            <Point y="392" x="1279" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_07214214589.mp4_04261.jpg">
+      <Objects Count="3">
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="41" Height="89" />
+          <Position Left="735" Top="260" Right="776" Bottom="349" />
+          <Points>
+            <Point y="260" x="735" />
+            <Point y="349" x="776" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="194" Height="56" />
+          <Position Left="414" Top="276" Right="608" Bottom="332" />
+          <Points>
+            <Point y="276" x="414" />
+            <Point y="332" x="608" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="10" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="242" Height="86" />
+          <Position Left="113" Top="292" Right="355" Bottom="378" />
+          <Points>
+            <Point y="292" x="113" />
+            <Point y="378" x="355" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_072336553158.mp4_05281.jpg">
+      <Objects Count="2">
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="44.450012" Height="15.970001" />
+          <Position Left="453.57999" Top="289.35999" Right="498.03" Bottom="305.32999" />
+          <Points>
+            <Point y="289.35999" x="453.57999" />
+            <Point y="305.32999" x="498.03" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="24.299988" Height="17.360016" />
+          <Position Left="632.06" Top="286.57999" Right="656.35999" Bottom="303.94" />
+          <Points>
+            <Point y="286.57999" x="632.06" />
+            <Point y="303.94" x="656.35999" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_072549429886.mp4_08191.jpg">
+      <Objects Count="7">
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="60.840088" Height="110.84003" />
+          <Position Left="1194.83" Top="331.32999" Right="1255.67" Bottom="442.17001" />
+          <Points>
+            <Point y="331.32999" x="1194.83" />
+            <Point y="442.17001" x="1255.67" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="35.840027" Height="67.5" />
+          <Position Left="1019.83" Top="292.17001" Right="1055.67" Bottom="359.67001" />
+          <Points>
+            <Point y="292.17001" x="1019.83" />
+            <Point y="359.67001" x="1055.67" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="21.669983" Height="47.5" />
+          <Position Left="969.83002" Top="293.82999" Right="991.5" Bottom="341.32999" />
+          <Points>
+            <Point y="293.82999" x="969.83002" />
+            <Point y="341.32999" x="991.5" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="6" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="123.33002" Height="66.670013" />
+          <Position Left="724" Top="266.32999" Right="847.33002" Bottom="333" />
+          <Points>
+            <Point y="266.32999" x="724" />
+            <Point y="333" x="847.33002" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="74.309998" Height="22.910004" />
+          <Position Left="243.19" Top="305.03" Right="317.5" Bottom="327.94" />
+          <Points>
+            <Point y="305.03" x="243.19" />
+            <Point y="327.94" x="317.5" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="56.940002" Height="24.299988" />
+          <Position Left="515.41998" Top="280.03" Right="572.35999" Bottom="304.32999" />
+          <Points>
+            <Point y="280.03" x="515.41998" />
+            <Point y="304.32999" x="572.35999" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="18.049988" Height="11.110016" />
+          <Position Left="632.78003" Top="285.57999" Right="650.83002" Bottom="296.69" />
+          <Points>
+            <Point y="285.57999" x="632.78003" />
+            <Point y="296.69" x="650.83002" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_072554292263.mp4_01531.jpg">
+      <Objects Count="2">
+        <Object Type="8" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="393.79999" Height="490.79999" />
+          <Position Left="0" Top="33" Right="393.79999" Bottom="523.79999" />
+          <Points>
+            <Point y="33" x="0" />
+            <Point y="523.79999" x="393.79999" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="33.330017" Height="19.159973" />
+          <Position Left="667.5" Top="286.17001" Right="700.83002" Bottom="305.32999" />
+          <Points>
+            <Point y="286.17001" x="667.5" />
+            <Point y="305.32999" x="700.83002" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_072619906299.mp4_01591.jpg">
+      <Objects Count="3">
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="24" Height="65" />
+          <Position Left="268" Top="281" Right="292" Bottom="346" />
+          <Points>
+            <Point y="281" x="268" />
+            <Point y="346" x="292" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="3" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="10.409973" Height="24.309998" />
+          <Position Left="619.56" Top="284.5" Right="629.96997" Bottom="308.81" />
+          <Points>
+            <Point y="284.5" x="619.56" />
+            <Point y="308.81" x="629.96997" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="10" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="40.280029" Height="22.220001" />
+          <Position Left="761.21997" Top="287.97" Right="801.5" Bottom="310.19" />
+          <Points>
+            <Point y="287.97" x="761.21997" />
+            <Point y="310.19" x="801.5" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_07292425300.mp4_01231.jpg">
+      <Objects Count="2">
+        <Object Type="6" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="197" Height="121" />
+          <Position Left="244" Top="222" Right="441" Bottom="343" />
+          <Points>
+            <Point y="222" x="244" />
+            <Point y="343" x="441" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="6" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="70" Height="63" />
+          <Position Left="532" Top="246" Right="602" Bottom="309" />
+          <Points>
+            <Point y="246" x="532" />
+            <Point y="309" x="602" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_073052312833.mp4_04231.jpg">
+      <Objects Count="4">
+        <Object Type="7" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="245" Height="155" />
+          <Position Left="112" Top="234" Right="357" Bottom="389" />
+          <Points>
+            <Point y="234" x="112" />
+            <Point y="389" x="357" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="5" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="249" Height="129" />
+          <Position Left="978" Top="295" Right="1227" Bottom="424" />
+          <Points>
+            <Point y="295" x="978" />
+            <Point y="424" x="1227" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="126" Height="41" />
+          <Position Left="850" Top="305" Right="976" Bottom="346" />
+          <Points>
+            <Point y="305" x="850" />
+            <Point y="346" x="976" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="63" Height="23" />
+          <Position Left="792" Top="297" Right="855" Bottom="320" />
+          <Points>
+            <Point y="297" x="792" />
+            <Point y="320" x="855" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_073101850673.mp4_02341.jpg">
+      <Objects Count="1">
+        <Object Type="5" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="43" Height="34" />
+          <Position Left="564" Top="279" Right="607" Bottom="313" />
+          <Points>
+            <Point y="279" x="564" />
+            <Point y="313" x="607" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_073151678196.mp4_01621.jpg">
+      <Objects Count="5">
+        <Object Type="9" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="56" Height="70" />
+          <Position Left="263" Top="307" Right="319" Bottom="377" />
+          <Points>
+            <Point y="307" x="263" />
+            <Point y="377" x="319" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="11" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="60" Height="32" />
+          <Position Left="452" Top="290" Right="512" Bottom="322" />
+          <Points>
+            <Point y="290" x="452" />
+            <Point y="322" x="512" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="3" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="27" Height="48" />
+          <Position Left="573" Top="279" Right="600" Bottom="327" />
+          <Points>
+            <Point y="279" x="573" />
+            <Point y="327" x="600" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="46" Height="29" />
+          <Position Left="620" Top="284" Right="666" Bottom="313" />
+          <Points>
+            <Point y="284" x="620" />
+            <Point y="313" x="666" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="21" Height="39" />
+          <Position Left="1033" Top="328" Right="1054" Bottom="367" />
+          <Points>
+            <Point y="328" x="1033" />
+            <Point y="367" x="1054" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_073556632110.mp4_06421.jpg">
+      <Objects Count="11">
+        <Object Type="14" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="247" Height="107" />
+          <Position Left="1008" Top="328" Right="1255" Bottom="435" />
+          <Points>
+            <Point y="328" x="1008" />
+            <Point y="435" x="1255" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="10" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="153.92999" Height="60.179993" />
+          <Position Left="992.03998" Top="313.10001" Right="1145.97" Bottom="373.28" />
+          <Points>
+            <Point y="313.10001" x="992.03998" />
+            <Point y="373.28" x="1145.97" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="86.220032" Height="40.509979" />
+          <Position Left="916.22998" Top="299.79001" Right="1002.45" Bottom="340.29999" />
+          <Points>
+            <Point y="299.79001" x="916.22998" />
+            <Point y="340.29999" x="1002.45" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="10" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="72.910034" Height="24.880005" />
+          <Position Left="831.73999" Top="298.63" Right="904.65002" Bottom="323.51001" />
+          <Points>
+            <Point y="298.63" x="831.73999" />
+            <Point y="323.51001" x="904.65002" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="7" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="55.549988" Height="33.559998" />
+          <Position Left="755.92999" Top="281.85001" Right="811.47998" Bottom="315.41" />
+          <Points>
+            <Point y="281.85001" x="755.92999" />
+            <Point y="315.41" x="811.47998" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="3" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="13.309998" Height="24.299988" />
+          <Position Left="610.66998" Top="281.85001" Right="623.97998" Bottom="306.14999" />
+          <Points>
+            <Point y="281.85001" x="610.66998" />
+            <Point y="306.14999" x="623.97998" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="12" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="52.089996" Height="68.860016" />
+          <Position Left="45.220001" Top="347.20999" Right="97.309998" Bottom="416.07001" />
+          <Points>
+            <Point y="347.20999" x="45.220001" />
+            <Point y="416.07001" x="97.309998" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="12" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="90.860001" Height="59.609985" />
+          <Position Left="63.740002" Top="332.16" Right="154.60001" Bottom="391.76999" />
+          <Points>
+            <Point y="332.16" x="63.740002" />
+            <Point y="391.76999" x="154.60001" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="139.46001" Height="50.350006" />
+          <Position Left="235.03999" Top="291.64999" Right="374.5" Bottom="342" />
+          <Points>
+            <Point y="291.64999" x="235.03999" />
+            <Point y="342" x="374.5" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="5" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="109.95999" Height="51.51001" />
+          <Position Left="325.31" Top="274.87" Right="435.26999" Bottom="326.38" />
+          <Points>
+            <Point y="274.87" x="325.31" />
+            <Point y="326.38" x="435.26999" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="81.02002" Height="22" />
+          <Position Left="448" Top="286.44" Right="529.02002" Bottom="308.44" />
+          <Points>
+            <Point y="286.44" x="448" />
+            <Point y="308.44" x="529.02002" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_073558300441.mp4_05521.jpg">
+      <Objects Count="5">
+        <Object Type="12" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="60" Height="40" />
+          <Position Left="349" Top="295" Right="409" Bottom="335" />
+          <Points>
+            <Point y="295" x="349" />
+            <Point y="335" x="409" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="12" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="31" Height="27" />
+          <Position Left="456" Top="292" Right="487" Bottom="319" />
+          <Points>
+            <Point y="292" x="456" />
+            <Point y="319" x="487" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="3" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="29" Height="44" />
+          <Position Left="596" Top="281" Right="625" Bottom="325" />
+          <Points>
+            <Point y="281" x="596" />
+            <Point y="325" x="625" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="57" Height="24" />
+          <Position Left="752" Top="289" Right="809" Bottom="313" />
+          <Points>
+            <Point y="289" x="752" />
+            <Point y="313" x="809" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="10" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="333" Height="151" />
+          <Position Left="946" Top="270" Right="1279" Bottom="421" />
+          <Points>
+            <Point y="270" x="946" />
+            <Point y="421" x="1279" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_073620366812.mp4_02701.jpg">
+      <Objects Count="0">
+        <Object Type="9" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="30.839996" Height="48.329987" />
+          <Position Left="155.83" Top="315.67001" Right="186.67" Bottom="364" />
+          <Points>
+            <Point y="315.67001" x="155.83" />
+            <Point y="364" x="186.67" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_073729848089.mp4_07351.jpg">
+      <Objects Count="6">
+        <Object Type="10" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="182" Height="84" />
+          <Position Left="1024" Top="320" Right="1206" Bottom="404" />
+          <Points>
+            <Point y="320" x="1024" />
+            <Point y="404" x="1206" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="10" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="72" Height="24" />
+          <Position Left="981" Top="316" Right="1053" Bottom="340" />
+          <Points>
+            <Point y="316" x="981" />
+            <Point y="340" x="1053" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="28" Height="53" />
+          <Position Left="803" Top="281" Right="831" Bottom="334" />
+          <Points>
+            <Point y="281" x="803" />
+            <Point y="334" x="831" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="37" Height="25" />
+          <Position Left="615" Top="283" Right="652" Bottom="308" />
+          <Points>
+            <Point y="283" x="615" />
+            <Point y="308" x="652" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="30.089996" Height="60.76001" />
+          <Position Left="358.17001" Top="285.19" Right="388.26001" Bottom="345.95001" />
+          <Points>
+            <Point y="285.19" x="358.17001" />
+            <Point y="345.95001" x="388.26001" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="56.130005" Height="24.309998" />
+          <Position Left="521.37" Top="282.87" Right="577.5" Bottom="307.17999" />
+          <Points>
+            <Point y="282.87" x="521.37" />
+            <Point y="307.17999" x="577.5" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_07393015953.mp4_03481.jpg">
+      <Objects Count="2">
+        <Object Type="14" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="122.10001" Height="49.769989" />
+          <Position Left="402.92001" Top="277.22" Right="525.02002" Bottom="326.98999" />
+          <Points>
+            <Point y="277.22" x="402.92001" />
+            <Point y="326.98999" x="525.02002" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="27.200012" Height="17.359985" />
+          <Position Left="599.09998" Top="284.16" Right="626.29999" Bottom="301.51999" />
+          <Points>
+            <Point y="284.16" x="599.09998" />
+            <Point y="301.51999" x="626.29999" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_074057674597.mp4_06781.jpg">
+      <Objects Count="6">
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="507" Height="283" />
+          <Position Left="17" Top="261" Right="524" Bottom="544" />
+          <Points>
+            <Point y="261" x="17" />
+            <Point y="544" x="524" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="35" Height="81" />
+          <Position Left="599" Top="268" Right="634" Bottom="349" />
+          <Points>
+            <Point y="268" x="599" />
+            <Point y="349" x="634" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="107" Height="58" />
+          <Position Left="470" Top="280" Right="577" Bottom="338" />
+          <Points>
+            <Point y="280" x="470" />
+            <Point y="338" x="577" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="20" Height="55.829987" />
+          <Position Left="970" Top="299.5" Right="990" Bottom="355.32999" />
+          <Points>
+            <Point y="299.5" x="970" />
+            <Point y="355.32999" x="990" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="25.830017" Height="63.329987" />
+          <Position Left="979.16998" Top="291.17001" Right="1005" Bottom="354.5" />
+          <Points>
+            <Point y="291.17001" x="979.16998" />
+            <Point y="354.5" x="1005" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="37.5" Height="80" />
+          <Position Left="883.33002" Top="272.82999" Right="920.83002" Bottom="352.82999" />
+          <Points>
+            <Point y="272.82999" x="883.33002" />
+            <Point y="352.82999" x="920.83002" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_074059539105.mp4_03271.jpg">
+      <Objects Count="2">
+        <Object Type="14" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="51.509949" Height="26.619995" />
+          <Position Left="690.53003" Top="285.32001" Right="742.03998" Bottom="311.94" />
+          <Points>
+            <Point y="285.32001" x="690.53003" />
+            <Point y="311.94" x="742.03998" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="31.25" Height="19.679993" />
+          <Position Left="624.56" Top="285.32001" Right="655.81" Bottom="305" />
+          <Points>
+            <Point y="285.32001" x="624.56" />
+            <Point y="305" x="655.81" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_074103938894.mp4_08101.jpg">
+      <Objects Count="2">
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="23.609985" Height="17.359985" />
+          <Position Left="597.33002" Top="284.5" Right="620.94" Bottom="301.85999" />
+          <Points>
+            <Point y="284.5" x="597.33002" />
+            <Point y="301.85999" x="620.94" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="22.219971" Height="13.200012" />
+          <Position Left="645.25" Top="286.57999" Right="667.46997" Bottom="299.78" />
+          <Points>
+            <Point y="286.57999" x="645.25" />
+            <Point y="299.78" x="667.46997" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_074142821884.mp4_03211.jpg">
+      <Objects Count="2">
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="105" Height="56" />
+          <Position Left="336" Top="287" Right="441" Bottom="343" />
+          <Points>
+            <Point y="287" x="336" />
+            <Point y="343" x="441" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="56" Height="26" />
+          <Position Left="491" Top="285" Right="547" Bottom="311" />
+          <Points>
+            <Point y="285" x="491" />
+            <Point y="311" x="547" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_074234993745.mp4_01171.jpg">
+      <Objects Count="12">
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="52.57" Height="103.20001" />
+          <Position Left="4.4899998" Top="330.42999" Right="57.060001" Bottom="433.63" />
+          <Points>
+            <Point y="330.42999" x="4.4899998" />
+            <Point y="433.63" x="57.060001" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="40.02" Height="97.899994" />
+          <Position Left="43.560001" Top="314.03" Right="83.580002" Bottom="411.92999" />
+          <Points>
+            <Point y="314.03" x="43.560001" />
+            <Point y="411.92999" x="83.580002" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="69.930008" Height="105.61002" />
+          <Position Left="63.810001" Top="306.79999" Right="133.74001" Bottom="412.41" />
+          <Points>
+            <Point y="306.79999" x="63.810001" />
+            <Point y="412.41" x="133.74001" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="29.899994" Height="67.029999" />
+          <Position Left="88.410004" Top="313.54999" Right="118.31" Bottom="380.57999" />
+          <Points>
+            <Point y="313.54999" x="88.410004" />
+            <Point y="380.57999" x="118.31" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="9" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="37.609985" Height="48.709991" />
+          <Position Left="172.32001" Top="307.76001" Right="209.92999" Bottom="356.47" />
+          <Points>
+            <Point y="307.76001" x="172.32001" />
+            <Point y="356.47" x="209.92999" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="9" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="19.769989" Height="47.26001" />
+          <Position Left="241.28" Top="290.88" Right="261.04999" Bottom="338.14001" />
+          <Points>
+            <Point y="290.88" x="241.28" />
+            <Point y="338.14001" x="261.04999" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="9" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="19.290009" Height="47.259979" />
+          <Position Left="259.60999" Top="289.92001" Right="278.89999" Bottom="337.17999" />
+          <Points>
+            <Point y="289.92001" x="259.60999" />
+            <Point y="337.17999" x="278.89999" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="27.01001" Height="48.700012" />
+          <Position Left="287.09" Top="289.44" Right="314.10001" Bottom="338.14001" />
+          <Points>
+            <Point y="289.44" x="287.09" />
+            <Point y="338.14001" x="314.10001" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="17.360016" Height="43.889984" />
+          <Position Left="302.53" Top="284.13" Right="319.89001" Bottom="328.01999" />
+          <Points>
+            <Point y="284.13" x="302.53" />
+            <Point y="328.01999" x="319.89001" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="16.389984" Height="37.130005" />
+          <Position Left="319.89001" Top="287.98999" Right="336.28" Bottom="325.12" />
+          <Points>
+            <Point y="287.98999" x="319.89001" />
+            <Point y="325.12" x="336.28" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="13.97998" Height="39.070007" />
+          <Position Left="352.20001" Top="282.67999" Right="366.17999" Bottom="321.75" />
+          <Points>
+            <Point y="282.67999" x="352.20001" />
+            <Point y="321.75" x="366.17999" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="14.470001" Height="31.350006" />
+          <Position Left="366.17999" Top="284.60999" Right="380.64999" Bottom="315.95999" />
+          <Points>
+            <Point y="284.60999" x="366.17999" />
+            <Point y="315.95999" x="380.64999" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_074345446245.mp4_05521.jpg">
+      <Objects Count="4">
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="37" Height="84" />
+          <Position Left="463" Top="265" Right="500" Bottom="349" />
+          <Points>
+            <Point y="265" x="463" />
+            <Point y="349" x="500" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="3" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="18" Height="34" />
+          <Position Left="621" Top="278" Right="639" Bottom="312" />
+          <Points>
+            <Point y="278" x="621" />
+            <Point y="312" x="639" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="7" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="56" Height="49" />
+          <Position Left="550" Top="256" Right="606" Bottom="305" />
+          <Points>
+            <Point y="256" x="550" />
+            <Point y="305" x="606" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="6" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="544.91998" Height="427.67999" />
+          <Position Left="0" Top="71.120003" Right="544.91998" Bottom="498.79999" />
+          <Points>
+            <Point y="71.120003" x="0" />
+            <Point y="498.79999" x="544.91998" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_07460216299.mp4_04171.jpg">
+      <Objects Count="3">
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="75.690002" Height="47.230011" />
+          <Position Left="594.56" Top="280.32999" Right="670.25" Bottom="327.56" />
+          <Points>
+            <Point y="280.32999" x="594.56" />
+            <Point y="327.56" x="670.25" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="13" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="122.22" Height="63.189972" />
+          <Position Left="143.5" Top="316.64001" Right="265.72" Bottom="379.82999" />
+          <Points>
+            <Point y="316.64001" x="143.5" />
+            <Point y="379.82999" x="265.72" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="31.249998" Height="49.299988" />
+          <Position Left="27.530001" Top="364.56" Right="58.779999" Bottom="413.85999" />
+          <Points>
+            <Point y="364.56" x="27.530001" />
+            <Point y="413.85999" x="58.779999" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_074616504401.mp4_02011.jpg">
+      <Objects Count="2">
+        <Object Type="10" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="164" Height="62" />
+          <Position Left="912" Top="295" Right="1076" Bottom="357" />
+          <Points>
+            <Point y="295" x="912" />
+            <Point y="357" x="1076" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="10" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="47" Height="13" />
+          <Position Left="841" Top="294" Right="888" Bottom="307" />
+          <Points>
+            <Point y="294" x="841" />
+            <Point y="307" x="888" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_074701701562.mp4_03781.jpg">
+      <Objects Count="8">
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="57" Height="107" />
+          <Position Left="67" Top="343" Right="124" Bottom="450" />
+          <Points>
+            <Point y="343" x="67" />
+            <Point y="450" x="124" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="104" Height="188" />
+          <Position Left="99" Top="280" Right="203" Bottom="468" />
+          <Points>
+            <Point y="280" x="99" />
+            <Point y="468" x="203" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="5" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="287" Height="115" />
+          <Position Left="231" Top="270" Right="518" Bottom="385" />
+          <Points>
+            <Point y="270" x="231" />
+            <Point y="385" x="518" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="46.659973" Height="82.5" />
+          <Position Left="1005.67" Top="291.82999" Right="1052.33" Bottom="374.32999" />
+          <Points>
+            <Point y="291.82999" x="1005.67" />
+            <Point y="374.32999" x="1052.33" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="32.5" Height="64.170013" />
+          <Position Left="914.83002" Top="283.5" Right="947.33002" Bottom="347.67001" />
+          <Points>
+            <Point y="283.5" x="914.83002" />
+            <Point y="347.67001" x="947.33002" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="18.339966" Height="43.329987" />
+          <Position Left="757.33002" Top="280.17001" Right="775.66998" Bottom="323.5" />
+          <Points>
+            <Point y="280.17001" x="757.33002" />
+            <Point y="323.5" x="775.66998" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="4" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="37.5" Height="24.159973" />
+          <Position Left="655.66998" Top="285.17001" Right="693.16998" Bottom="309.32999" />
+          <Points>
+            <Point y="285.17001" x="655.66998" />
+            <Point y="309.32999" x="693.16998" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="3" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="27.5" Height="48.329987" />
+          <Position Left="608.16998" Top="273.5" Right="635.66998" Bottom="321.82999" />
+          <Points>
+            <Point y="273.5" x="608.16998" />
+            <Point y="321.82999" x="635.66998" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+    <File FileName="tte_svm_rear_20170831_07474655285.mp4_03001.jpg">
+      <Objects Count="2">
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="40" Height="103" />
+          <Position Left="694" Top="256" Right="734" Bottom="359" />
+          <Points>
+            <Point y="256" x="694" />
+            <Point y="359" x="734" />
+          </Points>
+          <Label Text="" />
+        </Object>
+        <Object Type="1" ShapeType="0">
+          <Transform Direction="-1" Side="0" ExtendedPoint="0" ShowRoof="0" Width="54" Height="93" />
+          <Position Left="793" Top="275" Right="847" Bottom="368" />
+          <Points>
+            <Point y="275" x="793" />
+            <Point y="368" x="847" />
+          </Points>
+          <Label Text="" />
+        </Object>
+      </Objects>
+    </File>
+  </Files>
+</ObjectDetect>

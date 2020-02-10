@@ -137,6 +137,7 @@ namespace SV_final.ViewModel
 
         private void DoSplit()
         {
+            //image 파일 분할또한 처리해야한다
             string OriginFileName = "test.xml";
             string NewFile = "New";
             string Format = ".xml";
@@ -192,7 +193,6 @@ namespace SV_final.ViewModel
             {
                 int count = intNum;
                 if (option == "Name") count = WorkerList.Count();
-                Console.WriteLine(Ori.Files.File[i].FileName);
                 NewODs[i % count].Files.File.Add(Ori.Files.File[i]);
             }
 
@@ -207,6 +207,7 @@ namespace SV_final.ViewModel
                     var wfile = new System.IO.StreamWriter(@"..\..\" + NewFile + "_" + WorkerList[i] + Format);
                     writer.Serialize(wfile, newOD);
                     wfile.Close();
+                    logViewModel.AddLog(GetType(), OriginFileName , NewFile + "_" + WorkerList[i] + Format);
 
                 }
                 else if (option == "Number")
@@ -214,18 +215,13 @@ namespace SV_final.ViewModel
                     var wfile = new System.IO.StreamWriter(@"..\..\" + NewFile + "_" + i + Format);
                     writer.Serialize(wfile, newOD);
                     wfile.Close();
+                    logViewModel.AddLog(GetType(), OriginFileName, NewFile + "_" + i + Format);
                 }
                 else
                 {
                     //에러처리?
                 }
             }
-
-            //var obj = new ObjectDetect();
-            //var writer = new XmlSerializer(typeof(ObjectDetect));
-            //var wfile = new System.IO.StreamWriter(@"C:/Users/Stradvision/source/repos/DataManagementTool/test.xml");
-            //writer.Serialize(wfile, obj);
-            //wfile.Close();
         }
         public void OptionRB(object sender, RoutedEventArgs e)
         {

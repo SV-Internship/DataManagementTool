@@ -227,7 +227,6 @@ namespace SV_final.ViewModel
         {
             RadioButton rb = sender as RadioButton;
             string opt = rb.Content as string;
-            Console.WriteLine(opt);
             if (opt == "Name")
             {
                 option = opt;

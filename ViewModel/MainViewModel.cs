@@ -13,6 +13,7 @@ namespace SV_final.ViewModel
         public OpenViewModel OpenVM { get; set; }
         public LogViewModel LogVM { get; set; }
         public SplitViewModel SplitVM { get; set; }
+        public MergeViewModel MergeVM { get; set; }
 
 
 

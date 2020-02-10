@@ -24,7 +24,12 @@ namespace SV_final.Model
         [XmlElement("Label")]
         public _Label Label { get; set; }
 
-        public _Object() { }
+        public _Object() {
+            this.Transform = new _Transform();
+            this.Position = new _Position();
+            this.Points = new _Points();
+            this.Label = new _Label();
+        }
 
         public _Object(int ShapeType, int Type,
                       double Height, double Width, int ShowRoof, int ExtendedPoint, int Side, int Direction,

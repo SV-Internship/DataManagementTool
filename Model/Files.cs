@@ -14,7 +14,10 @@ namespace SV_final.Model
         [XmlElement("File")]
         public List<_File> File { get; set; }
 
-        public Files() { }
+        public Files()
+        {
+            this.File = new List<_File>();
+        }
 
     }
 }

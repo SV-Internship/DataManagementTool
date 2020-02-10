@@ -11,5 +11,9 @@ namespace SV_final.Model
     {
         [XmlElement("Files")]
         public Files Files { get; set; }
+        public ObjectDetect()
+        {
+            this.Files = new Files();
+        }
     }
 }

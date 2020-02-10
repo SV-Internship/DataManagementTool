@@ -22,18 +22,16 @@ namespace SV_final.ViewModel
 
         private void Do()
         {
-            string OriginFile ="test.xml";
-            string NewFile = "New_TEXT_File.txt";
-            //여기서 변환을 일단은 해야함
+            string OriginFileName ="test.xml";
+            string NewFileName = "New_TEXT_File.txt";
+
             XmlSerializer deserializer = new XmlSerializer(typeof(ObjectDetect));
-            TextReader reader = new StreamReader(@"..\..\" + OriginFile);
+            TextReader reader = new StreamReader(@"..\..\" + OriginFileName);
 
             ObjectDetect overview = (ObjectDetect)deserializer.Deserialize(reader);
             reader.Close();
 
-            Console.WriteLine(overview.Files.File[98].Objects.Count);
-
-            using (StreamWriter outputFile = new StreamWriter(@"..\..\" + NewFile))
+            using (StreamWriter outputFile = new StreamWriter(@"..\..\" + NewFileName))
             {
                 foreach (_File file in overview.Files.File)
                 {
@@ -49,7 +47,7 @@ namespace SV_final.ViewModel
                     }
                 }
             }
-            logViewModel.AddLog(GetType(), OriginFile, NewFile);
+            logViewModel.AddLog(GetType(), OriginFileName, NewFileName);
         }
     }
 

@@ -75,7 +75,6 @@ namespace SV_final.ViewModel
             this.logViewModel = logViewModel;
             FileList = new ObservableCollection<string>();
             OpenCommand = new RelayCommand(Open);
-
         }
 
         private void Open()

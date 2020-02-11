@@ -61,8 +61,7 @@
             </Grid>
         </Border>
 
-
-        <GroupBox Header="Split" DockPanel.Dock="Right" Padding="5">
+        <!--<GroupBox Header="Split" DockPanel.Dock="Right" Padding="5">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -74,19 +73,35 @@
                     <ColumnDefinition Width="5*" />
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Grid.Row="0" Text="New File Path" Margin="5,0"/>
+                <TextBox Grid.Column="1" Grid.Row="0" IsReadOnly="True" Width="100" Text="{Binding OutPath}" TextChanged="TextBox_TextChanged"/>
+                <Button Grid.Column="2" Grid.Row="0" Content="..." Margin="5,0" Command="{Binding OpenPathCommand}"/>
+                <Button Grid.Column="3" Grid.Row="0" Content="Save" Margin="5,0" Command="{Binding SavePathCommand}"/>
+            </Grid>
+        </GroupBox>-->
+
+
+        <GroupBox Header="Split" DockPanel.Dock="Right" Padding="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.2*" />
+                    <ColumnDefinition Width="5*" />
+                    <ColumnDefinition Width="1.5*"/>
+                </Grid.ColumnDefinitions>
                 <TextBlock Grid.Column="0" Grid.Row="0" Text="Origin : " Margin="5"/>
                 <TextBox x:Name="tbModel" Grid.Column="1" Grid.Row="0" Margin="5"/>
-                <Button Grid.Column="2" Grid.Row="0" Content="..." Margin="5" Command="{Binding OpenPathCommand}"/>
+                <!--<Button Grid.Column="2" Grid.Row="0" Content="..." Margin="5" Command="{Binding OpenPathCommand}"/>-->
 
                 <TextBlock Grid.Column="0" Grid.Row="1" Text="New : " Margin="5"/>
-                <TextBox  Grid.Column="1" Grid.Row="1" Margin="5"/>
+                <TextBox  Grid.Column="1" Grid.Row="1" Margin="5" IsReadOnly="True" Text="{Binding OutPath}" TextChanged="TextBox_TextChanged"/>
                 <Button Grid.Column="2" Grid.Row="1" Content="..." Margin="5" Command="{Binding OpenPathCommand}"/>
 
-                <Button Grid.Row="2" Content="do" Command="{Binding DoSplitCommand}"/>
-                <!--<TextBlock Text="Name" Margin="5,0"/>
-                <TextBox Width="80" Text="{Binding Name}"/>
-                <Button Width="40" Content="Add" Margin="5,0" Command="{Binding AddCommand}"/>
-                <Button Width="40" Content="Del" Margin="5,0" Command="{Binding DelCommand}"/>-->
+                <Button Grid.Column="2" Grid.Row="2" Content="Save" Margin="5,0" Command="{Binding SavePathCommand}"/>
             </Grid>
         </GroupBox>
 

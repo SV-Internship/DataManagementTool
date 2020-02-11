@@ -1,13 +1,16 @@
-﻿using SV_final.Model;
+﻿using Microsoft.WindowsAPICodePack.Dialogs;
+using SV_final.Model;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Xml.Serialization;
 
 namespace SV_final.ViewModel
@@ -20,6 +23,9 @@ namespace SV_final.ViewModel
         public RelayCommand CheckCommand { get; private set; }
         public RelayCommand DoSplitCommand { get; private set; }
 
+        public ICommand OpenPathCommand { get; private set; }
+        public ICommand SavePathCommand { get; private set; }
+
         private string _name;
         public string Name
         {
@@ -31,6 +37,19 @@ namespace SV_final.ViewModel
             {
                 _name = value;
                 OnPropertyChanged("Name");
+            }
+        }
+        private string _outPath;
+        public string OutPath
+        {
+            get
+            {
+                return _outPath;
+            }
+            set
+            {
+                _outPath = value;
+                OnPropertyChanged("OutPath");
             }
         }
         private int intNum { get; set; }
@@ -104,6 +123,8 @@ namespace SV_final.ViewModel
             NameVisibility = "Hidden";
             NumVisibility = "Hidden";
             intNum = -1;
+            OpenPathCommand = new RelayCommand(OpenPath);
+            SavePathCommand = new RelayCommand(SavePath);
         }
 
         private void Del()
@@ -136,18 +157,31 @@ namespace SV_final.ViewModel
             }
         }
 
+        private ObjectDetect XmlToOD(string fileName)
+        {
+            XmlSerializer deserializer = new XmlSerializer(typeof(ObjectDetect));
+            TextReader reader = new StreamReader(@fileName);
+
+            ObjectDetect result = (ObjectDetect)deserializer.Deserialize(reader);
+            reader.Close();
+            return result;
+        }
+
+        private void ODToXml(ObjectDetect OD, string fileName)
+        {
+            var writer = new XmlSerializer(typeof(ObjectDetect));
+            var wfile = new System.IO.StreamWriter(fileName);
+            writer.Serialize(wfile, OD);
+            wfile.Close();
+        }
+
         private void DoSplit()
         {
             //image 파일 분할또한 처리해야한다
-            string OriginFileName = "test.xml";
-            string NewFile = "New";
+            string OriginFileName = "../../test.xml";
             string Format = ".xml";
 
-            XmlSerializer deserializer = new XmlSerializer(typeof(ObjectDetect));
-            TextReader reader = new StreamReader(@"..\..\" + OriginFileName);
-
-            ObjectDetect Ori = (ObjectDetect)deserializer.Deserialize(reader);
-            reader.Close();
+            ObjectDetect Ori = XmlToOD(OriginFileName);
 
             if (intNum == -1)
             {
@@ -201,22 +235,18 @@ namespace SV_final.ViewModel
             {
                 ObjectDetect newOD = NewODs[i];
                 newOD.Files.FileCount = newOD.Files.File.Count();
-                var writer = new XmlSerializer(typeof(ObjectDetect));
 
                 if (option == "Name")
                 {
-                    var wfile = new System.IO.StreamWriter(@"..\..\" + NewFile + "_" + WorkerList[i] + Format);
-                    writer.Serialize(wfile, newOD);
-                    wfile.Close();
-                    logViewModel.AddLog(GetType(), OriginFileName , NewFile + "_" + WorkerList[i] + Format);
-
+                    string NewFileName = OutPath + "/New_" + WorkerList[i] + Format;
+                    ODToXml(newOD, NewFileName);
+                    logViewModel.AddLog(GetType(), OriginFileName , NewFileName);
                 }
                 else if (option == "Number")
                 {
-                    var wfile = new System.IO.StreamWriter(@"..\..\" + NewFile + "_" + i + Format);
-                    writer.Serialize(wfile, newOD);
-                    wfile.Close();
-                    logViewModel.AddLog(GetType(), OriginFileName, NewFile + "_" + i + Format);
+                    string NewFileName = OutPath + "/New_" + i + Format;
+                    ODToXml(newOD, NewFileName);
+                    logViewModel.AddLog(GetType(), OriginFileName, NewFileName);
                 }
                 else
                 {
@@ -245,5 +275,40 @@ namespace SV_final.ViewModel
                 Console.WriteLine("Radio botton ERROR");
             }
         }
+
+        private void OpenPath()
+        {
+            try
+            {
+                //var dlg = new CommonOpenFileDialog();
+                CommonOpenFileDialog dlg = new CommonOpenFileDialog();
+                dlg.IsFolderPicker = true;
+                //dlg.Filters.Add(new CommonFileDialogFilter("xml", "xml"));
+                if (dlg.ShowDialog() == CommonFileDialogResult.Ok)
+                {
+                    OutPath = dlg.FileName;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An exception occurred from {MethodBase.GetCurrentMethod().Name}");
+                Console.WriteLine(ex.ToString());
+
+            }
+        }
+        private void SavePath()
+        {
+            try
+            {
+                DoSplit();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An exception occurred from {MethodBase.GetCurrentMethod().Name}");
+                Console.WriteLine(ex.ToString());
+                logViewModel.FailLog(GetType(), OutPath + "저장에 실패하였습니다.");
+            }
+        }
     }
+
 }

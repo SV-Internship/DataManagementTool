@@ -4,13 +4,25 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SV_final.View"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" 
+             mc:Ignorable="d" >
     <StackPanel>
         <GroupBox Header="Files for Merge">
-            <ListBox Margin="5" Width="350" Height="200"
-                 ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+            <StackPanel>
+                <ListBox Margin="5" Width="350" Height="200"
+                         ScrollViewer.VerticalScrollBarVisibility="Visible"
+                         BorderBrush="{DynamicResource AccentColorBrush}" BorderThickness="1.5"
+                         >
+                   
+                </ListBox>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Xml File Path" Margin="5,0"/>
+                    <TextBox IsReadOnly="True" Width="200" Text="{Binding XmlPath}"/>
+                    <Button Width="40" Content="..." Margin="5,0" Command="{Binding OpenPathCommand}"/>
+                    <Button Width="40" Content="Save" Margin="5,0" Command="{Binding SavePathCommand}"/>
+                </StackPanel>
+            </StackPanel>
         </GroupBox>
-        <Button Width="40" Height="20" Content="DO" Margin="5,0" Command="{Binding DoCommand}"/>
     </StackPanel>
 </UserControl>

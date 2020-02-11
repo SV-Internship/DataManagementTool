@@ -14,7 +14,10 @@ namespace SV_final.Model
         [XmlElement("Objects")]
         public Objects Objects { get; set; }
 
-        public _File() { }
+        public _File() 
+        {
+            Objects = new Objects();
+        }
 
     }
 }

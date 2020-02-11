@@ -13,6 +13,9 @@ namespace SV_final.Model
         public int Count { get; set; }
         [XmlElement("Object")]
         public List<_Object> Object { get; set; }
-        public Objects() { }
+        public Objects() 
+        {
+            this.Object = new List<_Object>();
+        }
     }
 }

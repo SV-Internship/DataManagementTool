@@ -4,12 +4,17 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SV_final.View"
+      xmlns:local1="clr-namespace:SV_final.ViewModel"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <StackPanel Orientation="Horizontal">
-
-            <Button Width="40" Height="20" Content="DO" Margin="5,0" Command="{Binding DoCommand}"/>
+        <StackPanel Orientation="Vertical">
+            <Label Content="Change File" Margin="10,10,10,10"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Text="{Binding Path=changeFile}" Width="150" Height="30"/>
+                <Button Width="40" Height="20" Content="DO" Margin="5,0" Command="{Binding DoCommand}"/>
+            </StackPanel>
         </StackPanel>
     </Grid>
+
 </UserControl>

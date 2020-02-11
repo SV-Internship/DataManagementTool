@@ -11,10 +11,16 @@ namespace SV_final.Model
     {
         [XmlAttribute("FileCount")]
         public int FileCount { get; set; }
+
+        public string FileName { get; set; }
+
         [XmlElement("File")]
         public List<_File> File { get; set; }
 
-        public Files() { }
+        public Files() 
+        {
+            this.File = new List<_File>();
+        }
 
     }
 }

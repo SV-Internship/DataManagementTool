@@ -10,11 +10,10 @@
              d:DesignHeight="450" d:DesignWidth="800">
 
     <DockPanel>
-        <Border DockPanel.Dock="Left" BorderBrush="{DynamicResource AccentColorBrush}" BorderThickness="1">
+        <Border DockPanel.Dock="Left" BorderBrush="{DynamicResource AccentColorBrush}" BorderThickness="1.5">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <StackPanel Grid.Row="0">
@@ -39,27 +38,23 @@
                 </StackPanel>
                 <StackPanel Grid.Row="1" Visibility="{Binding NameVisibility}">
                     <GroupBox Header="Worker List" Padding="5">
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,0.333">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
                             <TextBlock Text="Name" Margin="5,0"/>
                             <TextBox Width="80" Text="{Binding Name}"/>
                             <Button Width="40" Content="Add" Margin="5,0" Command="{Binding AddCommand}"/>
                             <Button Width="40" Content="Del" Margin="5,0" Command="{Binding DelCommand}"/>
                         </StackPanel>
                     </GroupBox>
-                    <GroupBox>
-                        <ListView ItemsSource="{Binding WorkerList}" SelectedItem="{Binding SelectedItem}" SelectionChanged="ListView_SelectionChanged">
-                        </ListView>
-                    </GroupBox>
-                    <ListView ItemsSource="{Binding WorkerList}" SelectedItem="{Binding SelectedItem}" SelectionChanged="ListView_SelectionChanged">
-                    </ListView>
+                    <ListView ItemsSource="{Binding WorkerList}" SelectedItem="{Binding SelectedItem}"
+                              ScrollViewer.VerticalScrollBarVisibility="Visible" Height="275"/>
                 </StackPanel>
                 <StackPanel Grid.Row="1" Visibility="{Binding NumVisibility}">
-                    <StackPanel Orientation="Horizontal">
+                    <StackPanel Orientation="Horizontal" Margin="5">
                         <TextBlock Text="Number" Margin="5,0"/>
                         <TextBox Width="80" Text="{Binding Number}"/>
                         <Button Width="Auto" Content="Check" Margin="5,0" Command="{Binding CheckCommand}"/>
                     </StackPanel>
-                    <TextBlock Text="{Binding NumInfo}"/>
+                    <TextBlock Text="{Binding NumInfo}" Margin="5"/>
 
                 </StackPanel>
 

@@ -98,6 +98,8 @@ namespace SV_final.ViewModel
 
         private void OpenFiles()
         {
+            string FilePath="";
+
             try
             {
                 var dialog = new OpenFileDialog();
@@ -110,17 +112,7 @@ namespace SV_final.ViewModel
 
                 string Path = System.IO.Path.GetFullPath(dialog.FileName);
                 Path = Path.Replace("default", "").Trim();
-
-                try
-                {
-                    FileStream fs = File.Open(Path, FileMode.Open);
-                    logViewModel.AddLog(GetType(), Path);
-                }
-                catch
-                {
-                    logViewModel.FailLog(GetType(), Path);
-                    return;
-                }
+                FilePath = Path;
 
                 string[] parser = Path.Split('.');
                 Console.WriteLine(Path);
@@ -158,11 +150,12 @@ namespace SV_final.ViewModel
                         fileParsing(x);
                     }
                 }
-
+                logViewModel.AddLog(GetType(), Path);
             }
 
             catch (Exception ex)
             {
+                logViewModel.FailLog(GetType(), FilePath);
                 Console.WriteLine($"An exception occurred from {MethodBase.GetCurrentMethod().Name}");
                 Console.WriteLine(ex.ToString());
             }

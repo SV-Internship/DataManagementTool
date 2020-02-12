@@ -135,7 +135,7 @@ namespace SV_final.ViewModel
                     MergeList.Add(MainOD);
                 }
                 FileNameList.Clear();
-                foreach (string OpenF in openViewModel.FileList)
+                foreach (string OpenF in openViewModel.VisualFileList)
                 {
                     FileNameList.Add(OpenF);
                 }

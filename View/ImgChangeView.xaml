@@ -14,8 +14,11 @@
                     <Button Content="..." Width="40" Height="30" Command="{Binding ImgOpenCommand}"/>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Margin="10,10,10,10">
-                    <Label Content="Store Path" FontSize="15" FontWeight="Bold"/>
-                    <TextBox Width="180" Height="30" Margin="0,10,0,0" Text="{Binding Path=DestPath}"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Store Path" FontSize="15" FontWeight="Bold"/>
+                        <Button Grid.Column="2" Grid.Row="0" Content="..." Width="40"  Margin="5" Command="{Binding OpenPathCommand}"/>
+                    </StackPanel>
+                    <TextBox Width="180" IsReadOnly="True" Height="30" Margin="0,10,0,0" Text="{Binding Path=DestPath}"/>
                 </StackPanel>
             </StackPanel>
         </Border>

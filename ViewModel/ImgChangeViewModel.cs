@@ -8,11 +8,15 @@ using Microsoft.Win32;
 using System.IO;
 using System.Reflection;
 using System.Drawing;
+using Microsoft.WindowsAPICodePack.Dialogs;
+using System.Windows.Input;
 
 namespace SV_final.ViewModel
 {
     class ImgChangeViewModel : BaseViewModel
     {
+        public ICommand OpenPathCommand { get; private set; }
+
         private ObservableCollection<string> _fileList;
 
         public ObservableCollection<string> FileList
@@ -74,6 +78,7 @@ namespace SV_final.ViewModel
             ImgOpenCommand = new RelayCommand(ImgOpen);
             WholeImgConvertCommand = new RelayCommand(WholeImgConvert);
             SelectImgConvertCommand = new RelayCommand(SelectImgConvert);
+            OpenPathCommand = new RelayCommand(OpenPath);
         }
 
         private void ImgOpen()
@@ -149,6 +154,25 @@ namespace SV_final.ViewModel
             Bitmap bmp = new Bitmap(target);
             if(target != null)
                 bmp.Save(DestPath + fileparse[1] + ".png", System.Drawing.Imaging.ImageFormat.Png);
+        }
+
+        private void OpenPath()
+        {
+            try
+            {
+                CommonOpenFileDialog dlg = new CommonOpenFileDialog();
+                dlg.IsFolderPicker = true;
+                if (dlg.ShowDialog() == CommonFileDialogResult.Ok)
+                {
+                    DestPath = dlg.FileName;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An exception occurred from {MethodBase.GetCurrentMethod().Name}");
+                Console.WriteLine(ex.ToString());
+
+            }
         }
     }
 }

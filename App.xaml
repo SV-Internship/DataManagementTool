@@ -22,6 +22,9 @@
                 <localview:ConvertView/>
             </DataTemplate>
             <localviewmodel:MainViewModel x:Key="MainVM"/>
+            <DataTemplate DataType="{x:Type localviewmodel:ImgChangeViewModel}">
+                <localview:ImgChangeView/>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

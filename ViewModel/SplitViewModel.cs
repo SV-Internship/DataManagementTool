@@ -15,7 +15,7 @@ using System.Xml.Serialization;
 
 namespace SV_final.ViewModel
 {
-    class SplitViewModel :BaseViewModel
+    class SplitViewModel : BaseViewModel
     {
         private MainViewModel mainViewModel;
         private LogViewModel logViewModel;

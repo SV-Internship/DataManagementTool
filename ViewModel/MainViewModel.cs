@@ -52,12 +52,24 @@ namespace SV_final.ViewModel
             }
         }
 
+        private object _imgChangeContent;
+
+        public object ImgChangeContent
+        {
+            get { return _imgChangeContent; }
+            set
+            {
+                _imgChangeContent = value;
+                OnPropertyChanged("ImgChangeContent");
+            }
+        }
         public MainViewModel()
         {
             LogVM = new LogViewModel();
             this.OpenContent = new OpenViewModel(this, LogVM);
             this.openVM = new OpenViewModel(this, LogVM);
             this.ConvertContent = new ConvertViewModel(this, new OpenViewModel(this, LogVM));
+            this.ImgChangeContent = new ImgChangeViewModel();
             SplitVM = new SplitViewModel(this, LogVM, (OpenViewModel)OpenContent);
             ListData = new ObservableCollection<ObjectDetect>();
             this.MergeVM = new MergeViewModel(this, LogVM, (OpenViewModel)OpenContent);

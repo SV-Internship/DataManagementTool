@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="SV_final.View.ImgChangeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SV_final.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <DockPanel>
+        <Border DockPanel.Dock="Left">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal" Margin="10,10,10,10">
+                    <Label Content="Image File Open" FontSize="15" FontWeight="Bold"/>
+                    <Button Content="..." Width="40" Height="30" Command="{Binding ImgOpenCommand}"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="10,10,10,10">
+                    <Label Content="Store Path" FontSize="15" FontWeight="Bold"/>
+                    <TextBox Width="180" Height="30" Margin="0,10,0,0" Text="{Binding Path=DestPath}"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+        <Border DockPanel.Dock="Right">
+            <StackPanel Orientation="Vertical">
+                <ListBox Width="Auto" Height="200" Margin="5,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Visible" BorderThickness="1" 
+                         ItemsSource="{Binding Path=VisibleFileList}" SelectedItem="{Binding Path=ImgSelect, Mode=TwoWay}"/>
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Convert All" Width="130" Height="30" Margin="160,10,10,10" Command="{Binding WholeImgConvertCommand}"/>
+                    <Button Content="Convert" Width="70" Height="30" Command="{Binding SelectImgConvertCommand}"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </DockPanel>
+</UserControl>

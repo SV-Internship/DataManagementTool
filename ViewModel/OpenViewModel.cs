@@ -42,6 +42,18 @@ namespace SV_final.ViewModel
             }
         }
 
+        private ObservableCollection<string> _visualFilelist;
+
+        public ObservableCollection<string> VisualFileList
+        {
+            get { return _visualFilelist; }
+            set
+            {
+                _visualFilelist = value;
+                OnPropertyChanged("VisualFileList");
+            }
+        }
+
         private string _xmlPath;
 
         public string XmlPath
@@ -83,12 +95,16 @@ namespace SV_final.ViewModel
 
         public RelayCommand OpenCommand { get; private set; }
 
+        public RelayCommand DeleteCommand { get; private set; }
+
         public OpenViewModel(MainViewModel mainviewmodel, LogViewModel logViewModel)
         {
             _mainViewmodel = mainviewmodel;
             this.logViewModel = logViewModel;
             FileList = new ObservableCollection<string>();
+            VisualFileList = new ObservableCollection<string>();
             OpenCommand = new RelayCommand(Open);
+            DeleteCommand = new RelayCommand(Delete);
         }
 
         private void Open()
@@ -107,7 +123,7 @@ namespace SV_final.ViewModel
                 dialog.CheckFileExists = false;
                 dialog.CheckPathExists = true;
                 dialog.FileName = "default";
-                dialog.Filter = "Xml files(*.xml)|*.xml|Text files(*.txt)|*.txt|Json files(*.json)|*.json|All files|*.*";
+                dialog.Filter = "All files|*.*|Xml files(*.xml)|*.xml|Text files(*.txt)|*.txt|Json files(*.json)|*.json";
                 dialog.ShowDialog();
 
                 string Path = System.IO.Path.GetFullPath(dialog.FileName);
@@ -123,18 +139,27 @@ namespace SV_final.ViewModel
                     {
                         XmlPath = Path;
                         FileList.Add(XmlPath);
+                        string temp = XmlPath;
+                        string[] fileparse = temp.Split('\\');
+                        VisualFileList.Add(fileparse[fileparse.Length - 1]);
                         fileParsing(XmlPath);
                     }
                     else if (parser[1] == "txt")
                     {
                         TxtPath = Path;
                         FileList.Add(TxtPath);
+                        string temp = TxtPath;
+                        string[] fileparse = temp.Split('\\');
+                        VisualFileList.Add(fileparse[fileparse.Length - 1]);
                         fileParsing(TxtPath);
                     }
                     else if (parser[1] == "json")
                     {
                         JsonPath = Path;
                         FileList.Add(JsonPath);
+                        string temp = JsonPath;
+                        string[] fileparse = temp.Split('\\');
+                        VisualFileList.Add(fileparse[fileparse.Length - 1]);
                         fileParsing(JsonPath);
                     }
                 }
@@ -147,6 +172,9 @@ namespace SV_final.ViewModel
                     foreach (string x in files)
                     {
                         FileList.Add(x);
+                        string temp = x;
+                        string[] fileparse = temp.Split('\\');
+                        VisualFileList.Add(fileparse[fileparse.Length - 1]);
                         fileParsing(x);
                     }
                 }
@@ -159,6 +187,15 @@ namespace SV_final.ViewModel
                 Console.WriteLine($"An exception occurred from {MethodBase.GetCurrentMethod().Name}");
                 Console.WriteLine(ex.ToString());
             }
+        }
+
+        private void Delete()
+        {
+            var x = VisualFileList.IndexOf(SelectFile);
+
+            VisualFileList.RemoveAt(x);
+            FileList.RemoveAt(x);
+            _mainViewmodel.ListData.RemoveAt(x);
         }
 
         private int change(string name)

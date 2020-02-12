@@ -17,7 +17,9 @@ namespace SV_final.ViewModel
 {
     class SplitViewModel :BaseViewModel
     {
+        private MainViewModel mainViewModel;
         private LogViewModel logViewModel;
+        private OpenViewModel openViewModel;
         public RelayCommand AddCommand { get; private set; }
         public RelayCommand DelCommand { get; private set; }
         public RelayCommand CheckCommand { get; private set; }
@@ -112,9 +114,11 @@ namespace SV_final.ViewModel
 
         public string SelectedItem { get; set; }
 
-        public SplitViewModel(LogViewModel logViewModel)
+        public SplitViewModel(MainViewModel mainViewModel, LogViewModel logViewModel, OpenViewModel openViewModel)
         {
+            this.mainViewModel = mainViewModel;
             this.logViewModel = logViewModel;
+            this.openViewModel = openViewModel;
             AddCommand = new RelayCommand(Add);
             DelCommand = new RelayCommand(Del);
             CheckCommand = new RelayCommand(Check);
@@ -181,7 +185,9 @@ namespace SV_final.ViewModel
             string OriginFileName = "../../test.xml";
             string Format = ".xml";
 
-            ObjectDetect Ori = XmlToOD(OriginFileName);
+            //ObjectDetect Ori = XmlToOD(OriginFileName);
+            var index = openViewModel.VisualFileList.IndexOf(openViewModel.SelectFile);
+            ObjectDetect Ori = mainViewModel.ListData[index];
 
             if (intNum == -1)
             {

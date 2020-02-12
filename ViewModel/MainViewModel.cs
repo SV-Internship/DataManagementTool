@@ -60,6 +60,7 @@ namespace SV_final.ViewModel
             this.ConvertContent = new ConvertViewModel(this, new OpenViewModel(this, LogVM));
             SplitVM = new SplitViewModel(LogVM);
             ListData = new ObservableCollection<ObjectDetect>();
+            this.MergeVM = new MergeViewModel(this, LogVM, (OpenViewModel)OpenContent);
         }
     }
 }

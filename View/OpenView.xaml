@@ -23,7 +23,8 @@
                 </StackPanel>
             </StackPanel>
         </GroupBox>
-        <ListBox Margin="7,7,7,7" Width="190" Height="250" ScrollViewer.VerticalScrollBarVisibility="Visible" ItemsSource="{Binding Path=VisualFileList}" SelectedItem="{Binding Path=SelectFile, Mode=TwoWay}"/>
+        <ListBox Margin="7,7,7,7" Width="190" Height="250" ScrollViewer.VerticalScrollBarVisibility="Visible" ItemsSource="{Binding Path=VisualFileList}" 
+                 SelectedItem="{Binding Path=SelectFile, Mode=TwoWay}" BorderThickness="1"/>
         <Button Margin="150,10,10,10" Width="50" Height="30" Content="Delete" FontSize="14" FontWeight="Bold" Command="{Binding DeleteCommand}"/>
     </StackPanel>
 </UserControl>

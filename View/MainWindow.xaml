@@ -38,7 +38,7 @@
                             <local1:SplitView DataContext="{Binding SplitVM}"/>
                         </TabItem>
                         <TabItem Header="ImgChange">
-
+                            <ContentControl Content="{Binding ImgChangeContent}"/>
                         </TabItem>
                     </TabControl>
                 </TabItem>

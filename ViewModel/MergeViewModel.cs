@@ -63,12 +63,6 @@ namespace SV_final.ViewModel
 
         private void DoMerge()
         {
-            //List<ObjectDetect> OriODs = new List<ObjectDetect>();
-            //foreach (string file in MergeList)
-            //{
-            //    OriODs.Add(XmlToOD(file));
-            //}
-
             ObjectDetect NewOD = new ObjectDetect();
             foreach (ObjectDetect OriOD in MergeList)
             {
@@ -158,10 +152,8 @@ namespace SV_final.ViewModel
         {
             try
             {
-                Console.WriteLine("hess");
                 if (SelectedItem != null)
                 {
-                    Console.WriteLine("he");
                     MergeList.RemoveAt(FileNameList.IndexOf(SelectedItem));
                     FileNameList.Remove(SelectedItem);
                 }

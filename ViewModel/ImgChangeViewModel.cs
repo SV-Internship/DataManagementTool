@@ -15,6 +15,7 @@ namespace SV_final.ViewModel
 {
     class ImgChangeViewModel : BaseViewModel
     {
+        private LogViewModel logViewModel;
         public ICommand OpenPathCommand { get; private set; }
 
         private ObservableCollection<string> _fileList;
@@ -71,7 +72,7 @@ namespace SV_final.ViewModel
 
         public RelayCommand SelectImgConvertCommand { get; private set; }
 
-        public ImgChangeViewModel()
+        public ImgChangeViewModel(LogViewModel logViewModel)
         {
             FileList = new ObservableCollection<string>();
             VisibleFileList = new ObservableCollection<string>();
@@ -79,6 +80,7 @@ namespace SV_final.ViewModel
             WholeImgConvertCommand = new RelayCommand(WholeImgConvert);
             SelectImgConvertCommand = new RelayCommand(SelectImgConvert);
             OpenPathCommand = new RelayCommand(OpenPath);
+            this.logViewModel = logViewModel;
         }
 
         private void ImgOpen()
@@ -138,22 +140,25 @@ namespace SV_final.ViewModel
             foreach(string x in FileList)
             {
                 Image target = Image.FromFile(x);
-                string finaldest = DestPath + VisibleFileList[FileList.IndexOf(x)];
+                string finaldest = DestPath + "\\" + VisibleFileList[FileList.IndexOf(x)];
                 string[] fileparse = finaldest.Split('.');
                 Bitmap bmp = new Bitmap(target);
                 if (target != null)
-                    bmp.Save(DestPath + fileparse[1] + ".png", System.Drawing.Imaging.ImageFormat.Png);
+                    bmp.Save(DestPath + "\\" + fileparse[1] + ".png", System.Drawing.Imaging.ImageFormat.Png);
             }
+            logViewModel.AddLog(GetType(), "Wlote Image Convert");
         }
-
+        
         private void SelectImgConvert()
         {
             Image target = Image.FromFile(FileList[VisibleFileList.IndexOf(ImgSelect)]);
-            string finaldest = DestPath + VisibleFileList[VisibleFileList.IndexOf(ImgSelect)];
+            string finaldest = DestPath + "\\" + VisibleFileList[VisibleFileList.IndexOf(ImgSelect)];
+            Console.WriteLine(finaldest);
             string[] fileparse = finaldest.Split('.');
             Bitmap bmp = new Bitmap(target);
             if(target != null)
-                bmp.Save(DestPath + fileparse[1] + ".png", System.Drawing.Imaging.ImageFormat.Png);
+                bmp.Save(DestPath + "\\"+ fileparse[1] + ".png", System.Drawing.Imaging.ImageFormat.Png);
+            logViewModel.AddLog(GetType(), VisibleFileList[VisibleFileList.IndexOf(ImgSelect)]);
         }
 
         private void OpenPath()
